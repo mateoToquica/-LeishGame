@@ -7,7 +7,7 @@ public class destruirMoneda : MonoBehaviour {
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("pj"))
-        {
+        {  
             Destroy(gameObject);
         }
     }

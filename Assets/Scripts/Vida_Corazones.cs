@@ -13,7 +13,10 @@ public class Vida_Corazones : MonoBehaviour
     public static int vida = 3; // variable vida
 
     void Update()
-    {
+    {   if (vida>3)
+        {
+            vida = 3;
+        }
         if (vida == 3)
         {
             image.texture = Image_01;
@@ -29,6 +32,7 @@ public class Vida_Corazones : MonoBehaviour
         if (vida == 0)
         {
             image.texture = Image_04;
+            
         }
 
     }
