@@ -14,6 +14,11 @@ public class Vida_Corazones : MonoBehaviour
 
     void Update()
     {
+
+        if (vida >= 3)
+        {
+            vida = 3;
+        }
         if (vida == 3)
         {
             image.texture = Image_01;
