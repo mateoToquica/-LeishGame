@@ -18,7 +18,7 @@ public class Quitar_Vida : MonoBehaviour {
         if (other.gameObject.CompareTag("moneda"))
         {
             Vida_Corazones.vida = Vida_Corazones.vida + 1;
-			Time.timeScale=0;
+		//	Time.timeScale=0;
 
         }
 
