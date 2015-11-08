@@ -1,16 +1,15 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Quitar_Vida : MonoBehaviour {
+public class Quitar_Vida2 : MonoBehaviour {
 
 
-    // OnTriggerEnter cuando el se entra al objeto cambia el valor de  VIDA_Corazones.vida en -1 simulando la perda de vida
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("enemigo"))
         {
             Vida_Corazones.vida = Vida_Corazones.vida - 1;
-            GameObject.FindGameObjectWithTag("pj").transform.position = new Vector4(-21, 3, 0);
+            GameObject.FindGameObjectWithTag("pj").transform.position = new Vector4(13, 3, -15);
             if (Vida_Corazones.vida <= 0)
             {//si la vida es menor o igual a 0
              //aca ponen lo que quieran por ejemplo una animacion de morir o nc, un texto que diga estas muerto etc
@@ -20,12 +19,13 @@ public class Quitar_Vida : MonoBehaviour {
         {
             Vida_Corazones.vida = Vida_Corazones.vida + 1;
             //	Time.timeScale=0;
-          
+           
         }
 
 
     }
 
+    // Use this for initialization
     void Start () {
 	
 	}
