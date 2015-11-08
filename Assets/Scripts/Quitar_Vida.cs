@@ -13,6 +13,7 @@ public class Quitar_Vida : MonoBehaviour {
             GameObject.FindGameObjectWithTag("pj").transform.position = new Vector4(-21, 3, 0);
             if (Vida_Corazones.vida <= 0)
             {//si la vida es menor o igual a 0
+				Application.LoadLevel("Final");
              //aca ponen lo que quieran por ejemplo una animacion de morir o nc, un texto que diga estas muerto etc
             }
         }
