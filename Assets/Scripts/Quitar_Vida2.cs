@@ -13,6 +13,7 @@ public class Quitar_Vida2 : MonoBehaviour {
             if (Vida_Corazones.vida <= 0)
             {//si la vida es menor o igual a 0
 				Application.LoadLevel("Final");
+				Vida_Corazones.vida = 3;
              //aca ponen lo que quieran por ejemplo una animacion de morir o nc, un texto que diga estas muerto etc
             }
         }
