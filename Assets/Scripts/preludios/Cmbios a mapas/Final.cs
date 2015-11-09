@@ -6,7 +6,7 @@ public class Final : MonoBehaviour {
 	{
 		if (other.gameObject.CompareTag("Finish"))
 		{
-			Application.LoadLevel("Final");
+			Application.LoadLevel("FinJuego");
 		}
 		
 	}
