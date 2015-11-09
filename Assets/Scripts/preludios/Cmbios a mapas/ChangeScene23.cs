@@ -1,12 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class CambioScene23 : MonoBehaviour {
+public class ChangeScene23 : MonoBehaviour {
 	void OnTriggerEnter(Collider other)
 	{
 		if (other.gameObject.CompareTag("Finish"))
 		{
-			Application.LoadLevel("juegoMap3");
+			Application.LoadLevel("Preludio23");
 		}
 		
 	}

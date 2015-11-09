@@ -6,7 +6,7 @@ public class CambioScene45 : MonoBehaviour {
 	{
 		if (other.gameObject.CompareTag("Finish"))
 		{
-			Application.LoadLevel("juegoMap5");
+			Application.LoadLevel("Preludio45");
 		}
 		
 	}

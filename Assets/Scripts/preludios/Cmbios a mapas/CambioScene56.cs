@@ -6,7 +6,7 @@ public class CambioScene56 : MonoBehaviour {
 	{
 		if (other.gameObject.CompareTag("Finish"))
 		{
-			Application.LoadLevel("juegoMap6");
+			Application.LoadLevel("Preludio56");
 		}
 		
 	}

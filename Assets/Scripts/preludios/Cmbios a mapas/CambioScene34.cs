@@ -1,14 +1,14 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class CambioScene : MonoBehaviour {
+public class CambioScene34 : MonoBehaviour {
 	void OnTriggerEnter(Collider other)
 	{
 		if (other.gameObject.CompareTag("Finish"))
 		{
-			Application.LoadLevel("juegoMap2");
+			Application.LoadLevel("Preludio34");
 		}
-
+		
 	}
 	// Use this for initialization
 	void Start () {

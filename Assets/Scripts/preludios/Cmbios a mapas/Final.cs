@@ -1,12 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class CambioScene34 : MonoBehaviour {
+public class Final : MonoBehaviour {
 	void OnTriggerEnter(Collider other)
 	{
 		if (other.gameObject.CompareTag("Finish"))
 		{
-			Application.LoadLevel("juegoMap4");
+			Application.LoadLevel("Final");
 		}
 		
 	}
