@@ -3,20 +3,27 @@ using System.Collections;
 
 public class Preludio12 : MonoBehaviour {
 
-	float tiempo;
+	
+	// Declare variables
+	private int clicks;
+	
 	// Use this for initialization
-	void Start () {
-		
+	void Start ()
+	{
+		clicks = 0;
 	}
 	
 	// Update is called once per frame
-	void Update () {
-		tiempo += Time.deltaTime;
-		if (tiempo >= 2.2f) {
-			print ("entro");
-			Application.LoadLevel ("JuegoMap2");
-		} else {
-			print("no entro");
+	void Update ()
+	{
+		if (clicks > 1)
+		{
+			OnMouseUp();   
 		}
+	}
+	
+	void OnMouseUp ()
+	{
+		Application.LoadLevel ("JuegoMap2");
 	}
 }

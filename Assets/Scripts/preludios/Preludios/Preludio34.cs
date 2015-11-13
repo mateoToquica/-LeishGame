@@ -12,7 +12,7 @@ public class Preludio34 : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		tiempo += Time.deltaTime;
-		if (tiempo >= 2.2f) {
+		if (tiempo >= 4.2f) {
 			print ("entro");
 			Application.LoadLevel ("JuegoMap4");
 		} else {
